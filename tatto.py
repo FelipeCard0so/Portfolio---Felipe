@@ -7,6 +7,6 @@ while sucesso:
     if sucesso != "sim":
         print("Tente Novamente! ")
     if sucesso == "sim":
-        print("Parabéns Continue Melhorar! ")
+        print("Parabéns Continue Melhorando! ")
 
         # break
