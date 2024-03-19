@@ -1,17 +1,19 @@
 """
-Calculadora de juros compostos...
+Calculadora de Juros Compostos...
 """
 print("---------------------------------------------------------------------------------------------------------------")
 nome = input("Qual o seu nome? ")
-print(f"olá {nome.title()}, Seja muito bem vindo aos juros compostos! Aqui nós cuidamos da sua aposentadoria ;)\n")
+print(f"olá {nome.title()}, Seja bem vindo aos juros compostos! Comece a cuidar da sua aposentadoria ;)\n")
 print("---------------------------------------------------------------------------------------------------------------")
+
 din_inicial = int(input("digite quanto pretende investir hoje? "))
 tempo_desejado = int(input(f"Por quantos meses pretende deixar esse valor de:R$ {din_inicial} investido? "))
-taxa = float(input("digite em (decimal ex: 0.00) qual o valor da taxa mensal de retorno do seu investimento: "))
-sal_desejado = int(input("Digite o salario que você quer receber ao se aposentar: "))
-aporte = int(input("De quanto será o aporte mensal? "))
+taxa = float(input("digite em (decimal ex: 0.00 *não use ,* ) a taxa mensal de retorno do seu investimento: "))
+sal_desejado = int(input("Digite o salário que você quer receber ao se aposentar: "))
+aporte = int(input("De quanto será os aportes mensal? "))
 
 print("---------------------------------------------------------------------------------------------------------------")
+
 tempo_decorrido = 0
 
 while tempo_decorrido < tempo_desejado:
@@ -26,7 +28,6 @@ while tempo_decorrido < tempo_desejado:
         montante = (montante + aporte) * (1 + taxa) ** 1
         montante = round(montante, 2)
         tempo_decorrido = tempo_decorrido + 1
-
 
 # noinspection PyUnboundLocalVariable
 print(f"Parabens {nome.title()}!\n "
