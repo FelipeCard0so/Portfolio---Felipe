@@ -8,7 +8,7 @@ outlook = win32.Dispatch('Outlook.Application')
 mail = outlook.CreateItem(0)
 
 # Ler os endereços de e-mail do arquivo
-with open(r'C:\Users\BioDesign\PycharmProjects\Portfolio---Felipe\lista_de_email.txt', 'r') as file:
+with open(r'LOCAL ONDE ESTA A \lista_de_email.txt', 'r') as file:
     bcc_emails = file.read().splitlines()
 
 # Configurar destinatários (para, cópia e cópia oculta)
@@ -29,7 +29,7 @@ Atentamente:\n
 Felipe Cardoso"""
 
 # Anexar arquivo (currículo)
-attachment = r"C:\Users\BioDesign\Desktop\TRABALHO\Felipe_Cardoso.pdf"
+attachment = r"LOCAL ONDE ESTA O ARQUIVO EM.pdf"
 mail.Attachments.Add(attachment)
 
 # Enviar e-mail
